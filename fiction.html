@@ -1,0 +1,86 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Hoang Minh Khoi
+  ID: s3854233 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Bookstore</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="logo.jpg" alt="My Bookstore"></a>
+      </div>
+      <nav>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+            </ul>
+        </div> 
+      </nav>
+      <div id="hamb-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fiction.html">Fiction</a></li>
+            <li><a href="non-fiction.html">Non-Fiction</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+        <div class="categories">
+          <div class="category">
+              <h3>
+                  <a href="#">Sci-fi</a>
+              </h3>
+              <div class="buttons">
+                  <a href="book1detail.html" class="button">The Martian</a>
+                  <a href="#" class="button">Dune</a>
+                  <a href="#" class="button">Do Androids Dream of Electric Sheep</a>
+              </div>
+          </div>
+          <div class="category">
+              <h3>
+                <a href="#">Historical Fiction</a>
+              </h3>
+              <div class="buttons">
+                  <a href="#" class="button">Kite Runner</a>
+                  <a href="#" class="button">All the Lights We Cannot See</a>
+                  <a href="#" class="button">Gone with the Wind</a>
+              </div>
+          </div>
+          <div class="category">
+            <h3>
+              <a href="#">Political Fiction</a>
+            </h3>
+            <div class="buttons">
+                <a href="#" class="button">Fahrenheir 451</a>
+                <a href="#" class="button">Nineteen Eighty-Four</a>
+                <a href="#" class="button">Animal Farm</a>
+            </div>
+        </div>
+        </div> 
+    </main>
+    <footer>
+      <nav>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Copyright</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <p>&copy; 2023 My Bookstore. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Bookstore</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="logo.jpg" alt="My Bookstore"></a>
+          </div>
+        <nav>
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="non-fiction.html">Non-Fiction</a></li>
+                </ul>
+            </div> 
+        </nav>
+        <div id="hamb-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <form>
+			<label for="contact-purpose">Contact Purpose:</label>
+			<select id="contact-purpose" name="contact-purpose">
+				<option value="sell-books">I want to sell books</option>
+				<option value="buy-books">I want to buy books</option>
+			</select>
+			
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required>
+			
+			<label>Contact Preference:</label>
+			<input type="checkbox" id="contact-email" name="contact-preference[]" value="email" checked>
+			<label for="contact-email">By email</label>
+			<input type="checkbox" id="contact-phone" name="contact-preference[]" value="phone">
+			<label for="contact-phone">By phone</label>
+			
+			<label>Receive Weekly Newsletter:</label>
+			<input type="radio" id="newsletter-yes" name="newsletter" value="yes" checked>
+			<label for="newsletter-yes">Yes</label>
+			<input type="radio" id="newsletter-no" name="newsletter" value="no">
+			<label for="newsletter-no">No</label>
+			
+			<label for="extra-notes">Extra Notes:</label>
+			<textarea id="extra-notes" name="extra-notes"></textarea>
+			
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</form>
+    </main>
+    <footer>
+        <nav>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <a href="#">Copyright</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+        <p>&copy; 2023 My Bookstore. All rights reserved.</p>
+      </footer>
+      <script src="index.js"></script>
+  </body>
+</html>

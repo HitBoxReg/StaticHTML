@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #353836;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+header {
+    padding: 0 20px;
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo a{
+    color: #4CAF50;
+}
+nav ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+nav li {
+    padding: 5px;
+    margin-left: 10px;
+}
+nav li:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+#hamb-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+  
+#hamb-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+  
+.open .bar2 {
+    opacity: 0;
+}
+  
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+  
+.open .mobile {
+    display: flex;
+    background-color: #ccc;
+    border: #493267;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+.mobile {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+  
+.mobile li {
+    margin-bottom: 10px;
+}
+  
+@media only screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamb-icon {
+      display: block;
+    }
+}
+
+
+/* Style for the footer menu */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+footer a:hover {
+    text-decoration: underline;
+}
+  /* Style for the book categories */
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.category {
+    background-color: #f5f5f5;
+    width: 1000px;
+    padding: 50px;
+    padding-top: 0px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+}
+
+.category h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: auto;
+    padding: 5px;
+}
+  
+.category a {
+    text-align: center;
+    margin: 5px;
+}
+
+.category a:hover {
+    text-decoration: underline;
+}
+  
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.button {
+    background-color: #493267;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+  
+  /* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+  
+  /* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+  
+  /* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.bdetails {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.bdetails a {
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 5px 8px;
+    border: 1px solid #f44336;
+    color: red;
+}
+
+.desc {
+    display:flex;
+    flex-flow: column wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input,
+select,
+textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+button[type="submit"],
+button[type="reset"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
